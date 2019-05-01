@@ -4,6 +4,9 @@ SSL Commerz Payment Gateway API Integration for Laravel
 ## Description
 In this example you will find below script and a mysql table creation file.
   1. routes\web.php : Create route for the functions
+  
+  *: Rename Controller files as your needs. (Here It's given for TEST & LIVE)
+  
   2. app\Http\Controllers\PublicSslCommerzPaymentController.php: All the functions to do the transaction. Read the comments carefully.
   3. app\Http\Controllers\SSLCommerz.php: Helping class, here you will input store information
   4. app\Http\Middleware\VerifyCsrfToken.php : Input Route names to accept call from out side your site
@@ -31,7 +34,7 @@ In this example you will find below script and a mysql table creation file.
 https://github.com/sslcommerz/Integration_in_Laravel-5.6-with-IPN
 
 
-## Few Intruction for LIVE
+## Few Instructions for LIVE
 *: Change SSLCZ_STORE_ID, SSLCZ_STORE_PASSWD with your store id and password given by SSLCOMMERZ define("SSLCZ_STORE_ID", "XXXXX");define("SSLCZ_STORE_PASSWD", "XXXXX");
 
 *: If you are using SANDBOX storied and password then define("SSLCZ_IS_SANDBOX", true); keep SSLCZ_IS_SANDBOX, true. If you are using Live store id and password then turn SSLCZ_IS_SANDBOX, false.
